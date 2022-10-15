@@ -1,13 +1,16 @@
-import './App.css';
-import {
-  BrowserRouter,
-  // Routes,
-  Route,
-} from 'react-router-dom';
-import { ROUTES } from './routes';
+import { Routes, Route } from 'react-router-dom';
+
+import { Root, Home } from './pages';
+import PrivateRoute from './routes/Private/PrivateRoute';
 
 const App = () => {
-  return <div className="App"></div>;
+  return (
+    <Routes>
+      <Route path="/" element={<Root />}>
+        <Route path="/" element={<Home />} />
+      </Route>
+    </Routes>
+  );
 };
 
 export default App;

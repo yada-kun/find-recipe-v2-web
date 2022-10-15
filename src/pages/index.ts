@@ -1,6 +1,7 @@
-import Red from './Red';
-import Green from './Green';
-import Blue from './Blue';
-import Login from './Login';
+import Root from './Root';
+import Home from './Home';
+import Authentication from './Authentication';
+import UserProfile from './User/Profile';
+import MyRecipes from './User/MyRecipes';
 
-export { Red, Green, Blue, Login };
+export { Root, Home, Authentication, UserProfile, MyRecipes };
